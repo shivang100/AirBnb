@@ -1,0 +1,88 @@
+.navbar{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    border: 1px solid #e6e3e3;
+    padding-left: 3.5rem;
+    padding-right:3.5rem;
+
+}
+.navbar-logo{
+    height: 2rem;
+    padding: 1.5rem;
+}
+.searchbar
+{
+    display: flex;
+    justify-content: end;
+    gap: 1rem;
+    margin: 1rem;
+    padding: 0.75rem;
+    border: 1px solid #dddddd;
+    border-radius: 2.5rem;
+    align-items: center;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.08), 0 4px 12px rgba(0,0,0,0.05);
+}
+.searchbar:hover{
+    box-shadow: 0 1px 2px rgba(23, 21, 21, 0.1), 0 4px 12px rgba(0,0,0,0.10);
+}
+.seachbar-div
+{
+    font-weight: 600;
+}
+.seachbar-div2
+{
+    display: flex;
+    font-weight: 600;
+    color: #c5c3c3;
+}
+.navbar-right
+{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 2rem;
+    margin: 1rem;
+    padding: 0.75rem;
+    font-weight: 600;
+}
+.profile-language
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile-account
+{
+    display: flex;
+    gap: 0.75rem;
+    font-weight: 600;
+    background-color: #c8c8c8;
+    border-radius: 5rem;
+    padding: 0.3rem 0.5rem 0 0.7rem;
+}
+.bottom-navbar
+{
+    display: none;
+}
+@media only screen and (max-width : 800px)
+{
+    .navbar-logo,
+    .searchbar,
+    .navbar-right
+    {
+        display: none;
+    }
+
+    .bottom-navbar
+    {
+        align-items: center;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        background-color: #333;
+    }
+}
